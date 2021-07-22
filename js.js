@@ -20,3 +20,13 @@ function squareDigits(num){
 let arr = [10,15,30]
 let initialValue = 10
 arr.reduce((total, e)=>{return total+e},10) // 65
+
+
+//random stuff
+
+let six = 6
+let res = '#'
+while(six -- > 0){
+	res += '1234567890abcdef'.charAt(Math.floor((Math.random() * (16-0)+0)))
+}
+return res
