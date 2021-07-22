@@ -15,3 +15,8 @@ function accum(s) {
 function squareDigits(num){
 	return Number(num.toString().split('').map(val => {return val**2}).join(''))
 }
+
+//reduce
+let arr = [10,15,30]
+let initialValue = 10
+arr.reduce((total, e)=>{return total+e},10) // 65
