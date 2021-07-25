@@ -30,3 +30,6 @@ while(six -- > 0){
 	res += '1234567890abcdef'.charAt(Math.floor((Math.random() * (16-0)+0)))
 }
 return res
+
+//count elements in array
+let count = [...arrayOfElems].filter(x=> x== 25).length 
