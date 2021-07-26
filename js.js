@@ -33,3 +33,9 @@ return res
 
 //count elements in array
 let count = [...arrayOfElems].filter(x=> x== 25).length 
+
+//filter elements from b array in a array 
+function arrayDiff(a, b) {
+  let c = a.filter((e)=>{if(!b.includes(e)) return e})
+  return c
+}
