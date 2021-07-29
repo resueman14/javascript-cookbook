@@ -39,3 +39,18 @@ function arrayDiff(a, b) {
   let c = a.filter((e)=>{if(!b.includes(e)) return e})
   return c
 }
+
+//upsideDown number
+const upsideDownNumbers = {
+  "0": 0,
+  "1": 1,
+  "8": 8,
+  "6": 9,
+  "9": 6
+};
+
+function isUpsideDown(number) {
+  const result = +number.toString().split("").reverse().map(item => upsideDownNumbers[item]).join("");
+  
+  return result === number;
+}
