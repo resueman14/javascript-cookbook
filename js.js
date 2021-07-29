@@ -54,3 +54,7 @@ function isUpsideDown(number) {
   
   return result === number;
 }
+
+//sort numbers in array
+numArray.sort((a, b) => a - b); // For ascending sort
+numArray.sort((a, b) => b - a); // For descending sort
