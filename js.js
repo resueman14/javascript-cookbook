@@ -58,3 +58,10 @@ function isUpsideDown(number) {
 //sort numbers in array
 numArray.sort((a, b) => a - b); // For ascending sort
 numArray.sort((a, b) => b - a); // For descending sort
+
+
+//for in
+let arr = [1,2,3,4,5,6,7,8]
+for(let i in arr){
+  console.log(arr[i])
+}
