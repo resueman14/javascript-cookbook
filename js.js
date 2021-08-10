@@ -65,3 +65,23 @@ let arr = [1,2,3,4,5,6,7,8]
 for(let i in arr){
   console.log(arr[i])
 }
+
+//curring
+function huyaks(a){
+ return (b)=>{
+    return a+b
+  }
+}
+
+const huy = huyaks('huy')
+
+huy('pidor')  //'huypidor'
+
+
+
+//Set size
+function validateWord(s, c = s.toLowerCase())
+{
+  return c.length % new Set(c).size == 0
+  //                       up here
+}
