@@ -93,3 +93,28 @@ for (let i=0; i<arr.length; i++){
   sum += (arr[i-1]||0)+arr[i]  //DAMN DUDE
 }
 console.log(sum)
+
+
+//DUPLICATES EVERYWARE
+const removeDuplicateIds = (obj) => {
+  let revKeys = Object.keys(obj).sort((a,b)=>b-a)
+  let seen = new Set()
+  let res = {}
+
+  revKeys.forEach(e=>{
+    res[e]=[]
+    obj[e].forEach(v=>{
+      if(!seen.has(v)){
+        res[e].push(v)
+        seen.add(v)
+      }
+    })
+  })
+  return res
+};
+
+
+console.log(removeDuplicateIds({
+  "1": ["A", "B", "C"],
+  "2": ["A", "B", "D", "A"],
+}))
