@@ -34,6 +34,12 @@ return res
 //count elements in array
 let count = [...arrayOfElems].filter(x=> x== 25).length 
 
+//sort by parameter
+function sortByLength(array) {
+  return array.sort((a, b) => a.length - b.length);
+}
+
+
 //filter elements from b array in a array 
 function arrayDiff(a, b) {
   let c = a.filter((e)=>{if(!b.includes(e)) return e})
